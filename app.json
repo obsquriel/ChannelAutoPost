@@ -1,0 +1,53 @@
+{
+  "name": "TG Rename Bot",
+  "description": "Telegram's best Open Source Rename Bot. Create your Fork now.",
+  "keywords": [
+    "telegram",
+    "best",
+    "open",
+    "source",
+    "Rename"
+  ],
+  "success_url": "https://t.me/Mai_bOTs",
+  "website": "https://github.com/No-OnE-Kn0wS-Me",
+  "repository": "https://github.com/No-OnE-Kn0wS-Me/Renamebot",
+  "env": {
+    "TG_BOT_TOKEN": {
+      "description": "Your bot token, as a string.",
+      "value": ""
+    },
+    "FROM_CHANNEL": {
+      "description": "For Force Subscribe. Paste your Update channel USERNAME (without @).. Also Make The Bot Admin In That Channel!! ",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "TO_CHANNEL": {
+      "description": "allow only pre-defined users to use this bot",
+      "value": ""
+    }
+  },
+  "addons": [
+    {
+    "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
