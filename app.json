@@ -12,7 +12,7 @@
   "website": "https://github.com/No-OnE-Kn0wS-Me",
   "repository": "https://github.com/No-OnE-Kn0wS-Me/Renamebot",
   "env": {
-    "TG_BOT_TOKEN": {
+    "BOT_TOKEN": {
       "description": "Your bot token, as a string.",
       "value": ""
     },
